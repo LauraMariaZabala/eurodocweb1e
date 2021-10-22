@@ -1,0 +1,7 @@
+<html>
+<head>
+    <script>
+	window.location.href="usuarios/index.php";
+    </script>
+</head>
+</html>

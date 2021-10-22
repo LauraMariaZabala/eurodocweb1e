@@ -1,0 +1,26 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+       <script src="../../controller/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){ // CARGA INICIAL WEBPAGE
+leer_curl();
+});
+
+function leer_curl(){
+	$.post("curl.php", { consulta: 'sociedades', operacion: 'leer' }, function(data) {
+        returnData = data;
+		console.log(data);
+		lr_SQL = JSON.parse(data);
+		console.log(lr_SQL.data);
+		document.writeln("<table border=1><TR><TH>nombre</TH><TH>apellido</TH><TH>identificación</TH><TH>correo</TH></TR>");
+		for(i=0;i < lr_SQL.data.length;i++){
+//		console.log("debug" + i + " || " +lr_SQL.data[i].email);
+		document.writeln("<TR><TD>" + lr_SQL.data[i].firstname + "</TD><TD>" + lr_SQL.data[i].lastname + "</TD><TD>" 
+		+ lr_SQL.data[i].ip + "</TD><TD>" + lr_SQL.data[i].email + "</TD></TR>");
+		}
+		document.writeln("</table>"); 		
+	});
+}
+</script>
+</head>

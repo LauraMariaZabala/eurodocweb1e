@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Checkout example · Bootstrap v5.0</title>
+  </head>
+  <body class="bg-light">
+<div class="container">
+  <main>
+            <div class="row">
+            <div class="col-sm-2" id="mostrar_sociedad1">
+              <label for="firstName" class="form-label" id="sociedad_lbl">Sociedad</label>
+            </div>
+            <div class="col-sm-3" id="mostrar_sociedad2">
+              <input type="text" class="form-control" id="sociedad_inp" placeholder="" value="" disabled>
+            </div>
+            <div class="col-sm-2">
+              <label for="lastName" class="form-label" id="corresp_lbl">Correspondencia</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="corresp_inp" placeholder="" value="" disabled>
+            </div>
+			</div>
+
+            <div class="row">
+            <div class="col-sm-2">
+              <label for="Numero_radicado" class="form-label" id="radicado_lbl"># radicado</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="Numero_radicado" placeholder="" value="">
+            </div>
+            <div class="col-sm-2">
+				<button class="w-80 btn btn-success btn-mb float-right" type="submit" id="buscar" onclick="buscar_radicado()"><i class="fas fa-search"></i> Buscar</button>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="Estado_radicado" placeholder="" value="" disabled>
+            </div>
+			</div>
+
+            <div class="row">
+            <div class="col-sm-2">
+              <label for="creado_por" class="form-label" id="creado_lbl">Creado por</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="creado_por" placeholder="" value="" disabled>
+            </div>
+            <div class="col-sm-1">
+              <label for="creado_por" class="form-label" id="creado_el">el</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="creado_fecha" placeholder="" value="" disabled>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="creado_hora" placeholder="" value="" disabled>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-sm-2">
+              <label for="creado_por" class="form-label" id="modificado_lbl">Modificado por</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="modificado_por" placeholder="" value="" disabled>
+            </div>
+            <div class="col-sm-1">
+              <label for="creado_por" class="form-label" id="modificado_el">el</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="modificado_fecha" placeholder="" value="" disabled>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="modificado_hora" placeholder="" value="" disabled>
+            </div>
+			</div>
+
+			<div class="row">
+			<div class="col-lg-11">
+              <label for="blanco" class="form-label"> &nbsp; &nbsp; </label>
+			</div>
+			</div>
+
+			<div class="row mb-3" style="background-color:#EEE;border-radius:5px;">
+
+			<div class="row">
+			<div class="col-sm-2">
+              <label for="btn_documental" class="form-label" id="documental_lbl">Tipo documental</label>
+            </div>
+            <div class="btn-group col-sm-3">
+              <input type="text" class="form-control" id="documental" placeholder="" value="" disabled>
+            </div>
+
+            <div class="col-sm-2">
+              <label for="btn_asunto" class="form-label" id="asunto_lbl">Asunto</label>
+            </div>
+            <div class="btn-group col-sm-3">
+              <input type="text" class="form-control" id="asunto" placeholder="" value="" disabled>
+            </div>
+            </div>
+
+			<div class="row">
+			<div class="col-sm-2">
+              <label for="comunicacion" class="form-label" id="comunicacion_lbl"># comunicación</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="comunicacion" placeholder="" value="" disabled>
+            </div>
+            <div class="col-sm-2">
+              <label for="fecha_documento" class="form-label" id="fecha_lbl">Fecha Documento</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="fecha_documento" placeholder="" value="" disabled>
+            </div>
+            </div>
+
+			<div class="row">
+			<div class="col-sm-2">
+              <label for="identificacion" class="form-label" id="identificacion_lbl">Identificación</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="identificacion" placeholder="" value="" disabled>
+            </div>
+
+			<div class="col-sm-2">
+              <label for="empleado" class="form-label" id="empleado_lbl">Empleado</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="empleado" placeholder="" value="" disabled>
+            </div>
+            </div>
+
+			<div class="row">
+			<div class="col-sm-2">
+              <label for="descripcion" class="form-label" id="descripcion_lbl">Descripción</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="descripcion" placeholder="" value="" disabled>
+            </div>
+			<div class="col-lg-5" id="mensaje">
+              <label for="blanco" class="form-label"> &nbsp; &nbsp; </label>
+            </div>
+			</div>
+
+			<div class="row">
+			<div class="col-lg-11">
+              <label for="blanco" class="form-label"> &nbsp; &nbsp; </label>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="col-sm-2">
+			<button class="w-60 btn btn-success btn-mb" id="cantidad_anexos" onclick="llenar_tabla_anexos()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			<i class="fa fa-folder-open" aria-hidden="true"></i> &nbsp; <span id="numero_anexos">0</span> anexos</button>
+            </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModall" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal1">Seleccione un documento anexo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		<table style="width:100%" id="tabla_anexos"></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="mostrar_iframe_anexo()">Seleccionar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+			<div class="col-sm-4">
+			<div class="custom-file">
+			<input id="fileToUpload" type="file" name="fileToUpload" class="form-control">
+			</div>
+			</div>
+            <div class="btn-group col-sm-3 dropdown">
+			<button type="button" class="btn btn-sm btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="btn_tipo_anexo">Directorio de archivos</button>
+				<ul class="dropdown-menu" id="dd_anexo" aria-labelledby="btn_tipo_anexo"></ul>
+			</div>
+			<div class="col-sm-2">
+			<button class="w-60 btn btn-success btn-mb" id="upload3" onclick="validar_directorio()">
+			<i class="fas fa-paperclip"></i> Anexar</button>
+            </div>
+            </div>
+
+			<iframe src="" width="100%" height="600px" id="ifr1"/>
+            </div>
+
+  </main>  
+</div>
+  </body>
+</html>

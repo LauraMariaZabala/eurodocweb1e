@@ -1,0 +1,20 @@
+http://localhost/eurodocweb1d/others/ws_rest/api/?insertar
+
+{
+"sociedad": "MYP001",
+"correspondencia": "Facturas",
+"estado": "Cerrado",
+"creado_por": "FMENECES",
+"fecha_creado": "12.12.2021",
+"hora_creado": "07:10:00",
+"modificado_por": "ORIOS",
+"fecha_modificado": "31.12.2022",
+"hora_modificado": "23:30:00",
+"tipo_documental": "tdoc1",
+"asunto": "asunto_2",
+"comunicacion": "9876543421",
+"fecha_documento": "16.02.2018",
+"identificacion": "79901472",
+"empleado": "Pablo Daniels",
+"descripcion": "prueba web service 1"
+}

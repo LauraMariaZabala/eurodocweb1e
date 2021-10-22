@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EurodocWeb v1e</title>
+	<link href="media/css/bootstrap.min.css" rel="stylesheet">
+    <link href="media/css/style4.css" rel="stylesheet">
+    <script src="controller/js/solid.js"></script>
+    <script src="controller/js/fontawesome.js"></script>
+    <script src="controller/js/jquery-3.5.1.min.js"></script>
+    <script src="controller/js/popper.min.js"></script>
+    <script src="controller/js/bootstrap.min.js"></script>
+    <script src="controller/js/bootstrap.bundle.min.js"></script>
+    <script src="controller/controlador.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>EuroDocWeb</h3>
+                <strong>EW</strong>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#" id="radicados_crear"><i class="fas fa-file-image"></i> &nbsp;Radicar</a>
+                </li>
+                <li>
+                    <a href="#" id="consulta"><i class="fas fa-search"></i> &nbsp;Consultar</a>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs"></i> &nbsp;Configurar</a>
+                    <ul class="collapse list-unstyled show" id="pageSubmenu">
+                        <li>
+                            <a href="usuarios/index.php"><i class="fas fa-user-cog"></i> &nbsp;Usuarios</a>
+                        </li>
+                        <li>
+                            <a href="#" id="conf_pantallas"><i class="fas fa-desktop"></i> &nbsp;Pantallas</a>
+                        </li>
+                        <li>
+							<a href="#sociedades" id="crear_soc"><i class="fas fa-warehouse"></i> &nbsp;Sociedades</a>
+                        </li>
+                        <li>
+                            <a href="#TiposCorrespondencia" id="TiposCorrespondencia"><i class="fas fa-envelope-open"></i> &nbsp;Tipos de<BR>Correspondencia</a>
+                        </li>
+                        <li>
+                            <a href="#TiposDocumentales" id="TiposDocumentales"><i class="fas fa-book"></i> &nbsp;Tipos<BR>Documentales</a>
+                        </li>
+                        <li>
+                            <a href="#Asunto" id="Asunto"><i class="fas fa-book-open"></i> &nbsp;Asuntos</a>
+                        </li>
+                        <li>
+                            <a href="#rutas" id="rutas"><i class="fas fa-road"></i> &nbsp;Directorios de<br>archivos</a>
+                        </li>
+                    </ul>
+					</li>
+            </ul>
+        </nav>
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" type="button" id="sidebarCollapse">
+						<i class="fas fa-server"></i>
+                    </button>
+                    <button class="btn btn-success d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Salir <img src="media/img/Actions-window-close-icon.png" width="20px" height="20px"/></a>
+                            </li>
+                        </ul>&nbsp;&nbsp;&nbsp;&nbsp;
+						<img class="img-fluid" src="media/img/logo-header.svg" alt="" id="logo" width="80px" height="80px"/>
+                     </div>
+                </div>
+            </nav>
+		<div id="div1">
+		<CENTER>
+		<!--h2>Bienvenido a EuroDocWeb v1e</h2-->
+		<h2>Hola Laura</h2>
+		<P><BR><IMG src="media/img/Logo-Euro-Web.png" class="img-fluid"/>
+		</CENTER>
+		</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

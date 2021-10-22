@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>EurodocWeb v1.2</title>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+  </head>
+  <body class="bg-light">
+<div class="container">
+  <main>	
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Sociedad</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="soc_radio" id="success-outlined" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined" id="lbl_activo">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="soc_radio" id="danger-outlined" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined" id="lbl_inactivo">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Correspondencia</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="corr_radio" id="success-outlined2" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined2" id="lbl_activo2">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="corr_radio" id="danger-outlined2" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined2" id="lbl_inactivo2">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined3">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Radicado</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="radicado_radio" id="success-outlined2b" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined2b">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="radicado_radio" id="danger-outlined2b" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined2b">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined3b" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined3b">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Estado</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="estado_radio" id="success-outlined5" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined5">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="estado_radio" id="danger-outlined5" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined5">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined6" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined6">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Creado por</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="creado_por_radio" id="success-outlined7" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined7">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="creado_por_radio" id="danger-outlined7" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined7">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined8" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined8">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Modificado por</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="modificado_radio" id="success-outlined9" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined9">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="modificado_radio" id="danger-outlined9" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined9">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined10" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined10">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Tipo documental</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="documental_radio" id="success-outlined11" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined11">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="documental_radio" id="danger-outlined11" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined11">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined12" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined12">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Asunto</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="asunto_radio" id="success-outlined13" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined13">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="asunto_radio" id="danger-outlined13" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined13">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined14" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined14">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4"># comunicación</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="comunicacion_radio" id="success-outlined15" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined15">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="comunicacion_radio" id="danger-outlined15" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined15">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined16" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined16">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Fecha Documento</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="fecha_radio" id="success-outlined17" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined17">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="fecha_radio" id="danger-outlined17" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined17">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined18" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined18">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Identificación</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="identificacion_radio" id="success-outlined19" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined19">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="identificacion_radio" id="danger-outlined19" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined19">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined20" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined20">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Empleado</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="empleado_radio" id="success-outlined21" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined21">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="empleado_radio" id="danger-outlined21" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined21">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined22" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined22">Obligatorio</label><br>
+	</div>
+	</div>
+
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Descripción</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="descripcion_radio" id="success-outlined23" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined23">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="descripcion_radio" id="danger-outlined23" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined23">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined24" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined24">Obligatorio</label><br>
+	</div>
+	</div>
+	
+    <div class="row g-5">
+    <div class="col-sm-3"><p class="fs-4">Archivo Anexo/Imagen</p></div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="anexo_radio" id="success-outlined25" autocomplete="off" checked>
+	<label class="btn btn-outline-success" for="success-outlined25">Mostrar</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="radio" class="btn-check" name="anexo_radio" id="danger-outlined25" autocomplete="off">
+	<label class="btn btn-outline-danger" for="danger-outlined25">Esconder</label>
+	</div>
+    <div class="col-sm-2">
+	<input type="checkbox" class="btn-check" id="btn-check-outlined26" autocomplete="off">
+	<label class="btn btn-outline-primary" for="btn-check-outlined26">Obligatorio</label><br>
+	</div>
+	</div>
+	
+
+
+	<div id="mensaje"></div>
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+          <div class="row g-3">
+			
+			<div>
+	              <input type="hidden" id="lr_control" name="lr_control" value=""/>
+			</div>
+			</div>
+      </div>
+    </div>
+	<div id="resultados">
+	</div>
+
+            <div class="col-sm-4">
+				<label for="continuar" class="form-label">&nbsp;</label>
+				<button class="w-100 btn btn-success" type="submit" onclick="grabar_pantallas()"><i class="fas fa-save"></i> &nbsp;Grabar</button>
+            </div>
+  </main>
+</div>
+  </body>
+</html>
