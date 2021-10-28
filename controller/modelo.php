@@ -223,8 +223,13 @@ $nit = $_POST['nit'];
 $moneda = $_POST['moneda'];
 $responsable = $_POST['responsable'];
 $activo = $_POST['activo'];
+$direccion = $_POST['direccion'];
+$pais = $_POST['pais'];
+$region = $_POST['region'];
+$telefono = $_POST['telefono'];
+$email = $_POST['email'];
 $lectura = new Leer();
-$resultado = $lectura->insertar_sociedades($id_sociedad,$texto_sociedad,$nit,$moneda,$responsable,$activo);
+$resultado = $lectura->insertar_sociedades($id_sociedad,$texto_sociedad,$nit,$moneda,$responsable,$activo, $direccion, $pais, $region, $telefono, $email);
 echo $resultado;
 }
 

@@ -874,8 +874,9 @@ if(y === "Activo"){
 }
 }
 
-$(document).ready(function(){ //CLICK EN GUARDAR
-  $("#continuar").click(function(){
+//$(document).ready(function(){ //CLICK EN GUARDAR
+//  $("#continuar").click(function(){
+function grabar_sociedad(){	
 //	  alert(document.getElementById('lr_control').value);
 	  if( document.getElementById('lr_control').value == "actualizar" ){ //ACTUALZAR SOCIEDAD
         id_sociedad = document.getElementById('id_sociedad').value;
@@ -901,7 +902,12 @@ $(document).ready(function(){ //CLICK EN GUARDAR
 	    nit = document.getElementById('nit').value;
 	    moneda = document.getElementById('moneda').value;
 	    responsable = document.getElementById('responsable').value;
-		$.post("controller/modelo.php", {consulta: 'sociedades', operacion: 'insertar', id_sociedad: id_sociedad,texto_sociedad: texto_sociedad, nit: nit, moneda: moneda, responsable: responsable, activo:activo}, function(data) {
+		direccion = document.getElementById('direccion').value;
+		pais = document.getElementById('pais').value;
+		region = document.getElementById('region').value;
+		telefono = document.getElementById('telefono').value;
+		email = document.getElementById('email').value;
+		$.post("controller/modelo.php", {consulta: 'sociedades', operacion: 'insertar', id_sociedad: id_sociedad,texto_sociedad: texto_sociedad, nit: nit, moneda: moneda, responsable: responsable, activo:activo, direccion:direccion, pais:pais, region:region, telefono:telefono, email:email}, function(data) {
 		document.getElementById('mensaje').innerHTML = "<div class='alert alert-success small fade show p-2' role='alert'><svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Success:'><use xlink:href='#check-circle-fill'/></svg>" + data + "</div>";
 		});
 		$.post("controller/modelo.php", { consulta: 'sociedades', operacion: 'leer' }, function(data2) {
@@ -914,8 +920,9 @@ $(document).ready(function(){ //CLICK EN GUARDAR
 		});	
 		refrescar_resultados();
 	  }
-  });
-});	
+	}
+//  });
+//});	
 
 function actualizar(x,y){
         document.getElementById('mensaje').innerHTML = "";

@@ -51,10 +51,10 @@ if (mysqli_query($lrconn, $sql_actualizar)) {
 	   }
 
 
-function insertar_sociedades($id_sociedad,$texto_sociedad,$nit,$moneda,$responsable,$activo){
+function insertar_sociedades($id_sociedad,$texto_sociedad,$nit,$moneda,$responsable,$activo,$direccion,$pais, $region,$telefono,$email){
 $conexion = new Conectar();
 $lrconn = $conexion->DB();
-$sql_insertar = "INSERT INTO sociedades (cod_soc,descripcion,nit,moneda,responsable,activo) VALUES ('$id_sociedad','$texto_sociedad','$nit','$moneda','$responsable','$activo')";
+$sql_insertar = "INSERT INTO sociedades (cod_soc,descripcion,nit,moneda,responsable,activo, direccion, pais, region,telefono, email) VALUES ('$id_sociedad','$texto_sociedad','$nit','$moneda','$responsable','$activo','$direccion','$pais','$region','$telefono','$email')";
 if (mysqli_query($lrconn, $sql_insertar)) {
 	echo "Sociedad creada correctamente";
 } else {
